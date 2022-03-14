@@ -1,0 +1,273 @@
+@import 'normalize'
+@import 'setting'
+@import 'variables'
+
+/* header */
+.header
+  margin-bottom: 114px
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 42px
+  &-main
+    display: flex
+    align-items: center
+  &__logo
+    display: block
+    margin-right: 95px
+
+.menu
+  &-list
+    display: flex
+    &__item
+      margin-right: 50px
+    &__link
+      color: $white
+      font-size: 18px
+.phone
+  font-size: 24px
+  color: $white
+.humburger
+  &-menu
+    display: none
+    background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' fill='%23ffffff' enable-background='new 0 0 512 512' height='512' viewBox='0 0 512 512' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z'/%3E%3Cpath d='m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z'/%3E%3Cpath d='m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z'/%3E%3C/svg%3E");
+    background-color: transparent
+    background-size: contain
+    width: 30px
+    height: 30px
+    border: none
+    transition: background-image 0.5s
+    &-active
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' fill='%23ffffff' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='348.333px' height='348.334px' viewBox='0 0 348.333 348.334' style='enable-background:new 0 0 348.333 348.334;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M336.559,68.611L231.016,174.165l105.543,105.549c15.699,15.705,15.699,41.145,0,56.85 c-7.844,7.844-18.128,11.769-28.407,11.769c-10.296,0-20.581-3.919-28.419-11.769L174.167,231.003L68.609,336.563 c-7.843,7.844-18.128,11.769-28.416,11.769c-10.285,0-20.563-3.919-28.413-11.769c-15.699-15.698-15.699-41.139,0-56.85 l105.54-105.549L11.774,68.611c-15.699-15.699-15.699-41.145,0-56.844c15.696-15.687,41.127-15.687,56.829,0l105.563,105.554 L279.721,11.767c15.705-15.687,41.139-15.687,56.832,0C352.258,27.466,352.258,52.912,336.559,68.611z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+
+/* main */
+.main
+  &-wrapper
+    position: relative
+    background-image: url('../img/car/image-1.png')
+    background-repeat: no-repeat
+    background-position: 90% 35%
+    background-size: 900px
+    display: flex
+    justify-content: space-between
+    padding-bottom: 252px
+  &__title
+    margin: 0
+    font-weight: bold
+    text-align: center
+    font-size: 120px
+    line-height: 1
+  &__descr
+    margin: 0 0 84px 0
+    max-width: 480px
+    font-size: 28px
+    opacity: 0.4
+  &__button
+    margin-bottom: 180px
+    max-width: 220px
+    display: block
+  &__scroll
+    display: block
+    background-image: url('../img/icon/scroll.svg')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 40px
+    height: 60px
+
+    &:focus
+      outline: none
+.play
+  display: block
+  background-image: url('../img/icon/play.svg')
+  background-size: contain
+  background-repeat: no-repeat
+  padding-left: 30px
+  border: none
+  color: $primary
+  &:focus
+    outline: none
+  &__icon
+    margin-right: 13px
+
+/* design */
+.design
+  &-wrapper
+    padding-bottom: 200px
+  &-block
+    display: flex
+    justify-content: space-between
+  &__title
+    margin-bottom: 49px
+  &-list
+    display: flex
+    margin-bottom: 33px
+    &__item
+      font-size: 24px
+      color: #ccc
+      padding-bottom: 7px
+      background-color: transparent
+      border-color: transparent
+      & + &
+        margin-left: 50px
+      &_active
+        color: $white
+        border-bottom: 2px solid $white
+  &__descr
+    margin: 0 0 28px 0
+    font-size: 16px
+    line-height: 1.6
+  &-images
+    display: flex
+    justify-content: space-between
+  &__img
+    display: block
+    width: 23%
+    object-fit: cover
+.more
+  color: $primary
+  font-size: 16px
+  padding: 5px
+  line-height: 1.6
+  background-color: transparent
+  border: none
+
+/* feature */
+.feature
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    background-image: url(../img/car/image-2.png)
+    background-position: left
+    background-repeat: no-repeat
+    background-size: 50%
+    padding-left: 50%
+    min-height: 550px
+  &__img
+    width: 900px
+    min-width: 900px
+    object-fit: contain
+  &__title
+    margin-bottom: 74px
+  &-list
+    max-width: 571px
+  &__link
+    color: $white
+    background-color: transparent
+    border: none
+    width: 100%
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' fill='%23ffffff' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 240.835 240.835' style='enable-background:new 0 0 240.835 240.835;' xml:space='preserve'%3E%3Cg%3E%3Cpath id='Expand_Less' d='M129.007,57.819c-4.68-4.68-12.499-4.68-17.191,0L3.555,165.803c-4.74,4.74-4.74,12.427,0,17.155 c4.74,4.74,12.439,4.74,17.179,0l99.683-99.406l99.671,99.418c4.752,4.74,12.439,4.74,17.191,0c4.74-4.74,4.74-12.427,0-17.155 L129.007,57.819z'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: right
+    outline: none
+    background-size: 30px
+    &_active
+      margin-bottom: 14px
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='451.847px' height='451.847px' viewBox='0 0 451.847 451.847' style='enable-background:new 0 0 451.847 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+
+  &__item
+    margin-bottom: 20px
+  &-item
+    &-wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__title
+      font-size: 24px
+      line-height: 1.6
+  &-sub
+    &__item
+      display: flex
+      justify-content: space-between
+      opacity: 0.5
+      font-size: 14px
+      line-height: 1.6
+      margin-bottom: 10px
+
+/* contacts */
+.contacts
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: url('../img/car/image-3.png') no-repeat right
+  &__descr
+    margin: 0 0 30px 0
+    font-size: 16px
+    line-height: 1.6
+    opacity: 0.5
+    max-width: 411px
+.form
+  max-width: 492px
+  background-color: #080808
+  &__button
+    margin-top: 40px
+    min-width: 220px
+
+/* modal */
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  &-wrapper
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 9
+    max-width: 592px
+    width: 100%
+    height: 545px
+    max-height: 100%
+    transform: translate(-50%, -50%)
+    background-color: $dark
+    padding: 71px 57px
+    border: 1px solid $white
+  &__title
+    margin-bottom: 23px
+  &__descr
+    margin: 0 0 30px 0
+  &-buttons
+    display: flex
+    margin-top: 30px
+  &__button
+    margin-right: 48px
+  &__close
+    position: absolute
+    display: block
+    width: 30px
+    height: 30px
+    top: 15px
+    right: 15px
+    border: none
+    background-color: transparent
+    background-image: url('../img/icon/close.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    &:focus
+      outline: none
+.close
+  font-weight: bold
+  font-size: 16px
+  line-height: 1.5
+  color: $white
+  border: none
+  background-color: transparent
+  &:focus
+    outline: none
+.overlay
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0,0,0,.5)
+  width: 100%
+  height: 100%
+  z-index: 2
+
+@import 'media'
